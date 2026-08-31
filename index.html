@@ -22,13 +22,56 @@
             margin-left: 20px;
             border-radius: 8px;
         }
+
+        .name-row {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .name-row h1 {
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border: 1px solid #d0d7de;
+            border-radius: 20px;
+            background: #f6f8fa;
+            color: #24292f;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background 0.15s ease, border-color 0.15s ease;
+        }
+
+        .links a:hover {
+            background: #eaeef2;
+            border-color: #b0b8c0;
+        }
     </style>
 </head>
 
 <body>
     <div class="header">
         <img src="pic.jpeg" alt="Jan Bormet">
-        <h1>Jan Bormet</h1>
+        <div class="name-row">
+            <h1>Jan Bormet</h1>
+            <div class="links">
+                <a href="https://github.com/janbormet" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://dblp.org/pid/389/5735.html" target="_blank" rel="noopener noreferrer">DBLP</a>
+                <a href="https://scholar.google.com/citations?user=rfyg040AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            </div>
+        </div>
         <p>I am third year Ph.D. student at the <a
                 href="https://www.informatik.tu-darmstadt.de/cac/cac/index.en.jsp">Chair of Applied Cryptography</a> at
             Technische Universität Darmstadt, where I am advised by <a
@@ -148,13 +191,12 @@
 
     <h2>Internships</h2>
     <ul>
-        <li>Research Internship at the <strong><a href="https://ethereum.foundation/">Ethereum Foundation</a></strong>, Summer 2026.</li>
+        <li>Research Internship at the <strong><a href="https://ethereum.foundation/">Ethereum Foundation</a></strong>, Summer 2026, working with <a href="https://benedikt-wagner.dev/">Benedikt Wagner</a>.</li>
     </ul>
 
     <h2>Contact &amp; Links</h2>
     <ul>
         <li>E-Mail: jan.bormet@tu-darmstadt.de</li>
-        <li>GitHub: <a href="https://github.com/janbormet">github.com/janbormet</a></li>
     </ul>
 
     <h2>Reviewing</h2>
